@@ -1,0 +1,17 @@
+{
+    "name": "MyGameScripts",
+    "rootNamespace": "",
+    "references": [
+        "Elringus.Naninovel.Runtime",
+        "Elringus.Naninovel.E2E"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

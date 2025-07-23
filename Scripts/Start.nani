@@ -1,0 +1,73 @@
+# Start
+@char brownsugar
+Brown Sugar-senpai: Hi there! Let's see how our relationship grows naturally!
+
+Brown Sugar-senpai: We've just met, but you seem nice!
+
+Brown Sugar-senpai: Let me tell you a bit about myself...
+
+; Add some points for getting to know each other
+@addlove characterName:brownsugar points:15
+Brown Sugar-senpai: I'm starting to feel comfortable around you.
+
+Brown Sugar-senpai: What do you think of me so far?
+
+@choice "You're really sweet!" goto:.sweet
+@choice "I enjoy talking with you!" goto:.enjoy
+@choice "You're interesting." goto:.interesting
+@stop
+
+# sweet
+@addlove characterName:brownsugar points:20
+Brown Sugar-senpai: *lights up with joy* Really?! That makes me so happy!
+Brown Sugar-senpai: I feel like we're becoming real friends now!
+@goto .continue
+
+# enjoy
+@addlove characterName:brownsugar points:15
+Brown Sugar-senpai: *smiles warmly* I feel the same way about you!
+Brown Sugar-senpai: I'm glad we're getting to know each other better!
+@goto .continue
+
+# interesting
+@addlove characterName:brownsugar points:10
+Brown Sugar-senpai: *tilts head curiously* Interesting? I'll take that as a compliment!
+Brown Sugar-senpai: You're pretty interesting yourself!
+@goto .continue
+
+# continue
+Brown Sugar-senpai: Want to spend more time together?
+
+@choice "Absolutely!" goto:.absolutely
+@choice "Sure, why not." goto:.sure
+@choice "Maybe another time." goto:.maybe
+@stop
+
+# absolutely
+@addlove characterName:brownsugar points:25
+Brown Sugar-senpai: *blushes deeply* You... you really mean that?
+Brown Sugar-senpai: You've become someone really special to me...
+Brown Sugar-senpai: I can't believe how close we've become!
+@goto .ending
+
+# sure
+@addlove characterName:brownsugar points:15
+Brown Sugar-senpai: *happy smile* Great! I really enjoy our time together!
+Brown Sugar-senpai: You're one of my closest friends now!
+@goto .ending
+
+# maybe
+@addlove characterName:brownsugar points:5
+Brown Sugar-senpai: *understanding nod* That's okay, I understand!
+Brown Sugar-senpai: I'm just happy we got to talk today!
+@goto .ending
+
+# ending
+Brown Sugar-senpai: This feels so much more natural than showing numbers!
+
+Brown Sugar-senpai: Players will love authentic character reactions!
+
+; Show the developer stats in console for monitoring
+@showstats
+
+@stop
